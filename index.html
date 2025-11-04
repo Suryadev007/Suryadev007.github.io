@@ -1,902 +1,742 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js ss-preload" lang="en">
+  <head>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8" />
+    <title>Surya Dev</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="icon" href="img/ss.png" type="image/png" />
-  <title>Surya Dev</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="vendors/linericon/style.css" />
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
-  <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css" />
-  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
-  <link rel="stylesheet" href="vendors/animate-css/animate.css" />
-  <link rel="stylesheet" href="vendors/popup/magnific-popup.css" />
-  <link rel="stylesheet" href="vendors/flaticon/flaticon.css" />
-  
-  <!-- main css -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<body onload="typeWriter()">
-  <!--================Header Menu Area =================-->
-  <header class="header_area">
-    <div class="main_menu">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container box_1620">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h fa-2x text-light font-weight-bold" href="index.html">Surya Dev</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-            <ul class="nav navbar-nav menu_nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link font-weight-bold" href="#index" style="font-size: 1em">Home</a>
+    <!-- CSS
+    ================================================== -->
+    <!-- <link rel="stylesheet" href="css/vendor.css"> -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- favicons
+    ================================================== -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
+    <link rel="icon" type="image/png" href="ss.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body id="top">
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+      <div class="circles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- ## site header 
+        ================================================== -->
+      <header class="s-header">
+        <div class="header-mobile">
+          <span class="mobile-home-link"
+            ><a href="index.html"><span id="mobuserName"></span></a
+          ></span>
+          <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+        </div>
+
+        <div class="row wide main-nav-wrap">
+          <nav class="column lg-12 main-nav txt-cntr">
+            <ul class="bor-rad">
+              <li class="for-name">
+                <a href="index.html" class="home-link"
+                  ><span id="userName"></span
+                ></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bold" href="#about" style="font-size: 1em">About</a>
+              <li class="current">
+                <a href="#intro" class="smoothscroll">Intro</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bold" href="#services" style="font-size: 1em">technologies</a>
+              <li><a href="#about" class="smoothscroll">About</a></li>
+              <li><a href="#works" class="smoothscroll">Works</a></li>
+              <li>
+                <a href="tel:9877528394" class="smoothscroll"
+                  ><i class="fa-solid fa-phone-volume"></i> Call Me</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bold" href="#projects" style="font-size: 1em">Projects</a>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- end s-header -->
+
+      <!-- ## main content
+        ==================================================- -->
+      <main class="s-content">
+        <!-- ### intro
+            ================================================== -->
+        <section id="intro" class="s-intro target-section">
+          <div class="row intro-content wide">
+            <div class="column">
+              <div class="text-pretitle with-line">Hello World</div>
+
+              <h1 class="text-huge-title">
+                <span id="BasicInfo"></span>
+              </h1>
+            </div>
+
+            <ul class="intro-social">
+              <li>
+                <a class="mail-lnk"><i class="fas fa-envelope"></i>Gmail</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bold" href="#ceritificate" style="font-size: 1em">Ceritificates</a>
+              <li>
+                <a class="linkedin-lnk"
+                  ><i class="fab fa-linkedin-in"></i>Linkedin</a
+                >
+              </li>
+              <li>
+                <a class="github-lnk"
+                  ><i class="fa-brands fa-github"></i>Github</a
+                >
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <!--================Header Menu Area =================-->
+          <!-- end intro content -->
 
-  <!--================Home Banner Area =================-->
-  <section class="home_banner_area" style="margin-top: -50px" id="index">
-    <div class="container box_1620">
-      <div class="banner_inner d-flex align-items-center">
-        <div class="banner_content">
-          <div class="media">
-            <div class="d-flexw w3-animate-left">
-              <a class="light" href="https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_640.png">
-                <img src="https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_640.png" alt=""
-                  class="w-100" /></a>
-            </div>
-            <div class="media-body w3-animate-right">
-              <div class="personal_text">
-                <h6>
-                  <span class="wave fa-2x">👋</span> <span id="demo"></span>
-                </h6>
-                <h3>Surya Dev</h3>
-                <h4>
-                  <span class="font-weight-bold fa-2x">#</span> full-stack
-                  developer
-                </h4>
-                <p>
-                  A passionate Full Stack Software Developer having an
-                  experience of building Web and Mobile applications with
-                  JavaScript/Reactjs / Nodejs / React Native and some other
-                  cool libraries and frameworks.
+          <a href="#about" class="intro-scrolldown smoothscroll">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"
+              />
+            </svg>
+          </a>
+        </section>
+        <!-- end s-intro -->
+
+        <!-- ### about
+            ================================================== -->
+        <section id="about" class="s-about target-section">
+          <div class="row about-info wide" data-animate-block>
+            <div class="column lg-6 md-12">
+              <div class="about-info__text">
+                <h2 class="text-pretitle with-line" data-animate-el>About</h2>
+                <p class="attention-getter" data-animate-el>
+                  <span id="userInfo"></span>
                 </p>
-                <ul class="list basic_info">
-                  <li>
-                    <a href="#"><i class="lnr lnr-calendar-full"></i> 15th July,
-                      2001</a>
-                  </li>
-                  <li>
-                    <a href="sms:9877528394"><i class="lnr lnr-phone-handset"></i> +91-9877528394
-                    </a>
-                  </li>
-                  <li>
-                    <a href="mailto:suryadev7056@gmail.com"><i class="lnr lnr-envelope"></i> suryadev7056@gmail.com
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="lnr lnr-home"></i> Ludhiana, Punjab</a>
-                  </li>
-                </ul>
-                <ul class="list personal_social">
-                  <li class="">
-                    <a class="px-2 bg-success btn-reply w-100 border-0" href="cv.pdf" download="surya_dev_resume"
-                      style="text-decoration: none">
-                      Resume
-                      <span><i class="mx-1 fa fa-download"></i></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="mailto:suryadev7056@gmail.com" class="bg-danger"><i class="fa fa-google-plus"></i></a>
-                  </li>
-                  <li>
-                    <a target="_blank" href="https://www.linkedin.com/in/surya-dev-44b4ba33a/" class="bg-primary"><i
-                        class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
+                <a
+                  class="btn btn--medium u-fullwidth cv-download"
+                  data-animate-el
+                  >Download CV</a
+                >
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!--================End Home Banner Area =================-->
-
-  <!--================Welcome Area =================-->
-
-  <section class="welcome_area p_120" id="about">
-    <div class="container">
-      <div class="row welcome_inner">
-        <div class="col-lg-6">
-          <div class="welcome_text">
-            <h4>About Myself</h4>
-            <p>
-              I'm Surya Dev, working in TagHash media, Mohali as a Web developer,
-              where I completed upto 25+ projects in WordPress, Shopify, WIX, Space Dashboard.
-              I have good hands on page builder like DIVI page builer, Elementor and many more.
-              <br>
-              I have good hands on technologies like <b>PYTHON, MACHINE LEARNING, C, C++, JAVA.</b>
-              I'm Surya Dev, a passionate and dedicated Full-stack developer.
-              I have a strong foundation in computer science and a keen
-              interest in web development. I'm proficient in a range of
-              programming languages, including JavaScript, HTML/CSS, and
-              Python and have experience with various frameworks and libraries
-              such as React, Node.js. I'm always eager to learn new
-              technologies and expand my skill set. I have done Master of
-              Computer Applications, from GNDEC College,Ldh(2022-24) batch.
-              and my Industrial Training in Web Developoment from STEP-GNDEC.
-            </p>
-            <!-- <div class="row">
-                <div class="col-md-4">
-                  <div class="wel_item">
-                    <i class="lnr lnr-database"></i>
-                    <h4>$2.5M</h4>
-                    <p>Total Donation</p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="wel_item">
-                    <i class="lnr lnr-book"></i>
-                    <h4>1465</h4>
-                    <p>Total Projects</p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="wel_item">
-                    <i class="lnr lnr-users"></i>
-                    <h4>3965</h4>
-                    <p>Total Volunteers</p>
-                  </div>
-                </div>
-              </div> -->
-          </div>
-        </div>
-        <div class="col-lg-6 w3-animate-right">
-          <h4>Skills</h4>
-          <div class="tools_expert">
-            <div class="skill_main">
-              <div class="skill_item">
-                <h4>
-                  HTML, CSS, WORDSPRESS, LARAVEL
-                  <!-- <span class="counter">9</span>% -->
-                </h4>
-                <div class="progress_br">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill_item">
-                <h4>
-                  JavaScript,react,node,typescript
-                  <!-- <span class="counter">55</span>% -->
-                </h4>
-                <div class="progress_br">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill_item">
-                <h4>C,C++,Java,android 
-                  <!-- <span class="counter">70</span>% -->
-                </h4>
-                <div class="progress_br">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill_item">
-                <h4>Python,ML,AI 
-                  <!-- <span class="counter">65</span>% -->
-                </h4>
-                <div class="progress_br">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill_item">
-                <h4>Coreldraw 
-                  <!-- <span class="counter">75</span>% -->
-                </h4>
-                <div class="progress_br">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--================End Welcome Area =================-->
-
-  <!--================My Tabs Area =================-->
-  <section class="mytabs_area p_120">
-      <div class="container">
-        <div class="tabs_inner">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                id="home-tab"
-                data-toggle="tab"
-                href="#home"
-                role="tab"
-                aria-controls="home"
-                aria-selected="true"
-                >My Experiences</a
+            <div class="column lg-6 md-12 about-info__pic-block">
+              <h2
+                class="text-pretitle with-line"
+                data-animate-el=""
+                style="opacity: 1; transform: translateY(0px)"
               >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="profile-tab"
-                data-toggle="tab"
-                href="#profile"
-                role="tab"
-                aria-controls="profile"
-                aria-selected="false"
-                >My Education</a
-              >
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="home"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-            >
-              <ul class="list">
-                 <li>
-                  <span></span>
-                  <div class="media">
-                    <div class="d-flex">
-                      <p>February-2025 - Present</p>
-                    </div>
-                    <div class="media-body">
-                      <h4>Taghash Media</h4>
-                      <p>
-                        Web Developer <br />Mohali, Punjab
-                      </p>
+                Skills
+              </h2>
+              <div class="tools_expert">
+                <div class="skill_main attention-getter" data-animate-el>
+                  <div class="skill_item">
+                    <h4>
+                      HTML, CSS, WordPress, Shopify
+                      <!-- <span class="counter">9</span>% -->
+                    </h4>
+                    <div class="progress_br">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="90"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 90%"
+                        ></div>
+                      </div>
                     </div>
                   </div>
-                </li>
-                <li>
-                  <span></span>
-                  <div class="media">
-                    <div class="d-flex">
-                      <p>August 2024 to Feb-2025</p>
-                    </div>
-                    <div class="media-body">
-                      <h4>SainsSoft</h4>
-                      <p>
-                        Wordpress Developer <br />Ludhiana, Punjab
-                      </p>
+                  <div class="skill_item">
+                    <h4>
+                      JavaScript, React, Node,typescript
+                      <!-- <span class="counter">55</span>% -->
+                    </h4>
+                    <div class="progress_br">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="55"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 55%"
+                        ></div>
+                      </div>
                     </div>
                   </div>
-                </li>
+                  <div class="skill_item">
+                    <h4>
+                      C, C++, Java, android
+                      <!-- <span class="counter">70</span>% -->
+                    </h4>
+                    <div class="progress_br">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 70%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill_item">
+                    <h4>
+                      Python,ML,AI
+                      <!-- <span class="counter">65</span>% -->
+                    </h4>
+                    <div class="progress_br">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="65"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 65%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill_item">
+                    <h4>
+                      Coreldraw, Adobe, Canva
+                      <!-- <span class="counter">75</span>% -->
+                    </h4>
+                    <div class="progress_br">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="width: 75%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- about-info -->
+
+          <div class="row about-expertise" data-animate-block>
+            <div class="column lg-12">
+              <h2 class="text-pretitle" data-animate-el>Expertise</h2>
+
+              <ul
+                class="skills-list h1"
+                data-animate-el
+                id="expertise-list"
+              ></ul>
+            </div>
+          </div>
+          <!-- end about-expertise -->
+
+          <div class="row about-timelines" data-animate-block>
+            <div class="column lg-6 tab-12">
+              <h2 class="text-pretitle" data-animate-el>Experience</h2>
+
+              <div class="timeline" data-animate-el id="exp-sec"></div>
+              <!-- end timeline -->
+            </div>
+            <!-- end column -->
+
+            <div class="column lg-6 tab-12">
+              <h2 class="text-pretitle" data-animate-el>Education</h2>
+
+              <div class="timeline" data-animate-el id="edu-sec"></div>
+              <!-- end timeline -->
+            </div>
+            <!-- end column -->
+          </div>
+          <!-- end about-timelines -->
+        </section>
+        <!-- end s-about -->
+
+        <!-- ### works
+            ================================================== -->
+        <section id="works" class="s-works target-section">
+          <div class="row works-portfolio">
+            <div class="column lg-12" data-animate-block>
+              <h2 class="text-pretitle" data-animate-el>Recent Works</h2>
+              <p class="h1" data-animate-el>
+                Here are some of my favorite projects I have done lately. Feel
+                free to check them out.
+              </p>
+
+              <ul
+                class="folio-list row block-lg-one-half block-stack-on-1000"
+                id="project-list"
+              ></ul>
+              <!-- end folio-list -->
+            </div>
+            <!-- end column -->
+
+            <!-- Modal Templates Popup
+                    -------------------------------------------- -->
+            <div id="modal-01" hidden>
+              <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-fuji.jpg" alt="" />
+
+                <div class="modal-popup__desc">
+                  <h5>Retro Camera</h5>
+                  <p>
+                    Odio soluta enim quos sit asperiores rerum rerum repudiandae
+                    cum. Vel voluptatem alias qui assumenda iure et expedita
+                    voluptatem. Ratione officiis quae.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Branding</li>
+                    <li>Product Design</li>
+                  </ul>
+                </div>
+
+                <a href="https://www.behance.net/" class="modal-popup__details"
+                  >Project link</a
+                >
+              </div>
+            </div>
+            <!-- end modal -->
+
+            <div id="modal-02" hidden>
+              <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-lamp.jpg" alt="" />
+
+                <div class="modal-popup__desc">
+                  <h5>The White Lamp</h5>
+                  <p>
+                    Proin gravida nibh vel velit auctor aliquet. Aenean
+                    sollicitudin, lorem quis bibendum auctor, nisi elit
+                    consequat ipsum, nec sagittis sem nibh id elit.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Branding</li>
+                  </ul>
+                </div>
+
+                <a href="https://www.behance.net/" class="modal-popup__details"
+                  >Project link</a
+                >
+              </div>
+            </div>
+            <!-- end modal -->
+
+            <div id="modal-03" hidden>
+              <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-rucksack.jpg" alt="" />
+
+                <div class="modal-popup__desc">
+                  <h5>Rucksuck</h5>
+                  <p>
+                    Exercitationem reprehenderit quod explicabo consequatur
+                    aliquid ut magni ut. Deleniti quo corrupti illum velit
+                    eveniet ratione necessitatibus ipsam mollitia.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Product Design</li>
+                  </ul>
+                </div>
+
+                <a href="https://www.behance.net/" class="modal-popup__details"
+                  >Project link</a
+                >
+              </div>
+            </div>
+            <!-- end modal -->
+
+            <div id="modal-04" hidden>
+              <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="" />
+
+                <div class="modal-popup__desc">
+                  <h5>Since Day One</h5>
+                  <p>
+                    Dolores velit qui quos nobis. Aliquam delectus voluptas quos
+                    possimus non voluptatem voluptas voluptas. Est doloribus
+                    eligendi porro doloribus voluptatum.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Website</li>
+                  </ul>
+                </div>
+
+                <a href="https://www.behance.net/" class="modal-popup__details"
+                  >Project link</a
+                >
+              </div>
+            </div>
+            <!-- end modal -->
+
+            <div id="modal-05" hidden>
+              <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="" />
+
+                <div class="modal-popup__desc">
+                  <h5>Sand Dunes</h5>
+                  <p>
+                    Proin gravida nibh vel velit auctor aliquet. Aenean
+                    sollicitudin, lorem quis bibendum auctor, nisi elit
+                    consequat ipsum, nec sagittis sem nibh id elit.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Illustration</li>
+                  </ul>
+                </div>
+
+                <a href="https://www.behance.net/" class="modal-popup__details"
+                  >Project link</a
+                >
+              </div>
+            </div>
+            <!-- end modal -->
+
+            <div id="modal-06" hidden>
+              <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="" />
+
+                <div class="modal-popup__desc">
+                  <h5>Minimalismo</h5>
+                  <p>
+                    Quisquam vel libero consequuntur autem voluptas. Qui aut
+                    vero. Omnis fugit mollitia cupiditate voluptas. Aenean
+                    sollicitudin, lorem quis bibendum auctor.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Branding</li>
+                    <li>Product Design</li>
+                  </ul>
+                </div>
+
+                <a href="https://www.behance.net/" class="modal-popup__details"
+                  >Project link</a
+                >
+              </div>
+            </div>
+            <!-- end modal -->
+          </div>
+          <!-- end works-portfolio -->
+
+          <div class="row testimonials" id="testimonial-sec">
+            <div class="column lg-12" data-animate-block>
+              <div class="swiper-container testimonial-slider" data-animate-el>
+                <div class="swiper-wrapper">
+                  <div class="testimonial-slider__slide swiper-slide">
+                    <div class="testimonial-slider__author">
+                      <img
+                        src="images/avatars/user-02.jpg"
+                        alt="Author image"
+                        class="testimonial-slider__avatar"
+                      />
+                      <cite class="testimonial-slider__cite">
+                        <strong>Tim Cook</strong>
+                        <span>CEO, Apple</span>
+                      </cite>
+                    </div>
+                    <p>
+                      Molestiae incidunt consequatur quis ipsa autem nam sit
+                      enim magni. Voluptas tempore rem. Explicabo a quaerat sint
+                      autem dolore ducimus ut consequatur neque. Nisi dolores
+                      quaerat fuga rem nihil nostrum. Laudantium quia
+                      consequatur molestias delectus culpa.
+                    </p>
+                  </div>
+                  <!-- end testimonial-slider__slide -->
+
+                  <div class="testimonial-slider__slide swiper-slide">
+                    <div class="testimonial-slider__author">
+                      <img
+                        src="images/avatars/user-03.jpg"
+                        alt="Author image"
+                        class="testimonial-slider__avatar"
+                      />
+                      <cite class="testimonial-slider__cite">
+                        <strong>Sundar Pichai</strong>
+                        <span>CEO, Google</span>
+                      </cite>
+                    </div>
+                    <p>
+                      Excepturi nam cupiditate culpa doloremque deleniti
+                      repellat. Veniam quos repellat voluptas animi adipisci.
+                      Nisi eaque consequatur. Voluptatem dignissimos ut ducimus
+                      accusantium perspiciatis. Quasi voluptas eius distinctio.
+                      Atque eos maxime.
+                    </p>
+                  </div>
+                  <!-- end testimonial-slider__slide -->
+
+                  <div class="testimonial-slider__slide swiper-slide">
+                    <div class="testimonial-slider__author">
+                      <img
+                        src="images/avatars/user-01.jpg"
+                        alt="Author image"
+                        class="testimonial-slider__avatar"
+                      />
+                      <cite class="testimonial-slider__cite">
+                        <strong>Satya Nadella</strong>
+                        <span>CEO, Microsoft</span>
+                      </cite>
+                    </div>
+                    <p>
+                      Repellat dignissimos libero. Qui sed at corrupti expedita
+                      voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed
+                      ipsam. Autem eaque officia cum exercitationem sunt
+                      voluptatum accusamus. Quasi voluptas eius distinctio.
+                      Voluptatem dignissimos ut.
+                    </p>
+                  </div>
+                  <!-- end testimonial-slider__slide -->
+
+                  <div class="testimonial-slider__slide swiper-slide">
+                    <div class="testimonial-slider__author">
+                      <img
+                        src="images/avatars/user-06.jpg"
+                        alt="Author image"
+                        class="testimonial-slider__avatar"
+                      />
+                      <cite class="testimonial-slider__cite">
+                        <strong>Jeff Bezos</strong>
+                        <span>CEO, Amazon</span>
+                      </cite>
+                    </div>
+                    <p>
+                      Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc
+                      ac augue. Fusce vel dui. In ac felis quis tortor malesuada
+                      pretium. Curabitur vestibulum aliquam leo. Qui sed at
+                      corrupti expedita voluptas odit. Nihil ea quia nesciunt.
+                      Ducimus aut sed ipsam.
+                    </p>
+                  </div>
+                  <!-- end testimonial-slider__slide -->
+                </div>
+                <!-- end swiper-wrapper -->
+
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- end swiper-container -->
+            </div>
+            <!-- end column -->
+          </div>
+          <!-- end row testimonials -->
+        </section>
+        <!-- end s-works -->
+
+        <!-- ### contact
+            ================================================== -->
+        <section id="contact" class="s-contact target-section">
+          <div class="row contact-top">
+            <div class="column lg-12">
+              <h2 class="text-pretitle">Get In Touch</h2>
+
+              <p class="h1">
+                I love to hear from you. Whether you have a question or just
+                want to chat about design, tech & art — shoot me a message.
+              </p>
+            </div>
+          </div>
+          <!-- end contact-top -->
+
+          <div class="row contact-bottom">
+            <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+              <h3 class="text-pretitle">Reach me at</h3>
+              <p class="contact-links">
+                <a id="userEmail" class="mailtoui"></a> <br />
+                <a id="userPhn"></a>
+              </p>
             </div>
             <div
-              class="tab-pane fade"
-              id="profile"
-              role="tabpanel"
-              aria-labelledby="profile-tab"
+              class="column lg-4 md-5 tab-6 stack-on-550 contact-block"
+              style="padding-inline: 60px"
             >
-              <ul class="list">
+              <h3 class="text-pretitle">Social</h3>
+              <ul class="contact-social">
                 <li>
-                  <span></span>
-                  <div class="media">
-                    <div class="d-flex">
-                      <p>Sept 2022 to June 2024</p>
-                    </div>
-                    <div class="media-body">
-                      <h4>Guru Nanak Dev Engg College</h4>
-                      <p>
-                        Master In Computer Applications <br />Ludhiana, Punjab
-                      </p>
-                    </div>
-                  </div>
+                  <a class="mail-lnk"><i class="fas fa-envelope"></i></a>
                 </li>
                 <li>
-                  <span></span>
-                  <div class="media">
-                    <div class="d-flex">
-                      <p>July 2019 to June 2022</p>
-                    </div>
-                    <div class="media-body">
-                      <h4>PCTE Group of Institutes</h4>
-                      <p>
-                        Bachelor In Computer Applications <br />Ludhiana, Punjab
-                      </p>
-                    </div>
-                  </div>
+                  <a class="linkedin-lnk"><i class="fab fa-linkedin-in"></i></a>
                 </li>
-                
+                <li>
+                  <a class="github-lnk"><i class="fa-brands fa-github"></i></a>
+                </li>
               </ul>
             </div>
+            <div class="column lg-4 md-12 contact-block">
+              <a
+                id="sayHlo"
+                class="mailtoui btn btn--medium u-fullwidth contact-btn"
+              ></a>
+              <a class="btn btn--medium u-fullwidth cv-download"
+                ><i class="fa-solid fa-download"></i> Download</a
+              >
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-  <!--================End My Tabs Area =================-->
+          <!-- end contact-bottom -->
+        </section>
+        <!-- end contact -->
+      </main>
+      <!-- end s-content -->
 
-  <!--================Feature Area =================-->
-  <section class="feature_area p_100" id="services">
-    <div class="container">
-      <div class="main_title">
-        <h2>technologies learned</h2>
-        <!-- <p>
-            If you are looking at blank cassettes on the web, you may be very
-            confused at the difference in price. You may see some for as low as
-            $.17 each.
-          </p> -->
-      </div>
-      <div class="container">
-        <div class="row text-center px-3">
-          <div class="col-md-3 h-50 dd text-center rounded-3 m-1">
-            <h2>Html</h2>
-            <i class="fa-brands fa-html5"> </i>
-          </div>
-          <div class="col-md-3 h-50 dd text-center rounded-3 m-1">
-            <h2>CSS</h2>
-            <i class="fa-brands fa-css3"> </i>
-          </div>
-          <div class="col-md-3 h-50 dd text-center rounded-3 m-1">
-            <h2>Java</h2>
-            <i class="fa-brands fa-java"> </i>
-          </div>
-          <div class="col-md h-50 dd text-center rounded-3 m-1">
-            <h2>Script</h2>
-            <i class="fa-brands fa-js"> </i>
-          </div>
-          <div class="col-md-3 h-50 dd text-center rounded-3 m-1">
-            <h2>Python</h2>
-            <i class="fa-brands fa-python"> </i>
-          </div>
-
-          <div class="col-md-3 h-50 dd text-center rounded-3 m-1">
-            <h2>Php</h2>
-            <i class="fa-brands fa-php"> </i>
-          </div>
-          <div class="col-md-3 h-50 dd text-center rounded-3 m-1">
-            <h2>Android</h2>
-            <i class="fa-brands fa-android"> </i>
-          </div>
-          <div class="col-md h-50 dd text-center rounded-3 m-1">
-            <h2>Sql</h2>
-            <i class="fa-solid fa-database"> </i>
-          </div>
-          <div class="col-md-3 h-50 dd text-center rounded-3 m-1">
-            <h2>Wordpress</h2>
-            <i class="fa-brands fa-wordpress"> </i>
-          </div>
-          <div class="col-md-3 h-50 dd text-center rounded-3 m-1">
-            <h2>React</h2>
-            <i class="fa-brands fa-react"> </i>
-          </div>
-          <div class="col-md-3 h-50 dd text-center rounded-3 m-1">
-            <h2>Node</h2>
-            <i class="fa-brands fa-node"> </i>
-          </div>
-          <div class="col-md h-50 dd text-center rounded-3 m-1">
-            <h2>Linux</h2>
-            <i class="fa-brands fa-linux"> </i>
-          </div>
-        </div>
-      </div>
+      <!-- ## footer
+        ================================================== -->
+      <!-- end s-footer -->
     </div>
-  </section>
-  <!--================End Feature Area =================-->
+    <!-- end -s-pagewrap -->
 
-  <!--================Home Gallery Area collerge projects=================-->
-  <section class="home_gallery_area p_120" id="projects">
-    <div class="container">
-      <div class="main_title">
-        <h2>Projects Undertaken</h2>
-        <p>Project completed in SainsSoft.</p>
-      </div>
-    </div>
-    <div class="container">
-      <div class=" row imageGallery1">
-        <div class="col-lg-4 col-md-4 col-sm-6  design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="img/gallery/prytec.png" alt="" class="h-100" />
-              <a class="light" href="img/gallery/prytec.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <a href="https://prytec.com.au/" target="_blank"><h4>Prytec Solutions</h4></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6  design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="img/gallery/ezee.png" alt="" class="h-100" />
-              <a class="light" href="img/gallery/ezee.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <a href="https://ezeemortgages.com.au/" target="_blank"><h4>eZee Mortgage</h4></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6  creative">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="img/gallery/istn.png" alt="" />
-              <a class="light" href="img/gallery/istn.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <a href="https://istn.com/" target="_blank"><h4>ISTN</h4></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 creative design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="img/gallery/col.png" alt="" />
-              <a class="light" href="img/gallery/col.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <a href="https://colhealth.com.au/" target="_blank"><h4>Circle Of Life Health</h4></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 creative design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="img/gallery/cool&crispy.png" alt="" />
-              <a class="light" href="img/gallery/cool&crispy.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <a href="https://coolandcrispy.com.au/" target="_blank"><h4>CoolandCrispy</h4></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 creative design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="img/gallery/evajay.png" alt="" />
-              <a class="light" href="img/gallery/evajay.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <a href="https://evajaydecorentals.com/" target="_blank"><h4>Evajay Decor Rentals</h4></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 creative design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="img/gallery/hm.png" alt="" />
-              <a class="light" href="img/gallery/hm.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <a href="https://hmstripouts.com.au/" target="_blank"><h4>HM StripOuts & Defits</h4></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 creative design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="img/gallery/sainssoft.png" alt="" />
-              <a class="light" href="img/gallery/sainssoft.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <a href="https://sainssoft.com/" target="_blank"><h4>Sainssoft</h4></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 creative design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="img/gallery/clear.png" alt="" />
-              <a class="light" href="img/gallery/clear.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <a href="https://clearvuemn.com/" target="_blank"><h4>Clear Vuem</h4></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 creative design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="img/gallery/moving.png" alt="" />
-              <a class="light" href="img/gallery/moving.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <a href="https://yourmovingestimate.com" target="_blank"><h4>Your Moving</h4></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 creative design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="img/gallery/atkins.png" alt="" />
-              <a class="light" href="img/gallery/atkins.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <a href="https://atkinsplumbingandgas.com.au/" target="_blank"><h4>Atkins</h4></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 creative design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="img/gallery/shitec.png" alt="" />
-              <a class="light" href="img/gallery/shitec.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <a href="https://shitechs.com/" target="_blank"><h4>Shitech</h4></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="more_btn">
-          <a class="main_btn" href="#">Load More Items</a>
-        </div>
-    </div> -->
-  </section>
-  <!--================End Home Gallery Area =================-->
-
-  <!--================Home Gallery Area collerge projects=================-->
-  <section class="home_gallery_area" id="projects">
-    <div class="container">
-      <div class="main_title">
-        <h2>Projects Undertaken</h2>
-        <p>Project completed during college time.</p>
-      </div>
-      <div class="isotope_fillter">
-        <ul class="gallery_filter list">
-          <li class="active" data-filter="*"><a href="#">All</a></li>
-          <li data-filter=".web"><a href="#">Web</a></li>
-          <li data-filter=".android"><a href="#">Android</a></li>
-          <li data-filter=".python-ml"><a href="#">Pyhton-ML</a></li>
-          <li data-filter=".java"><a href="#">Java</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container">
-      <div class="gallery_f_inner row imageGallery1">
-        <div class="col-lg-4 col-md-4 col-sm-6 web manipul design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="docs/crs.png" alt="" class="h-100" />
-              <a class="light" href="docs/crs.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <h4>Car-Rental System</h4>
-              <p>Web</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 web android manipul creative">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="docs/srms.png" alt="" />
-              <a class="light" href="docs/srms.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <h4>Student Result Management System</h4>
-              <p>Web & Android</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 web creative design print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid" src="docs/cr.png" alt="" />
-              <a class="light" href="docs/cr.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <h4>Cricket Blog Website</h4>
-              <p>Web</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 android creative print">
-          <div class="h_gallery_item">
-            <div class="g_img_item">
-              <img class="img-fluid"
-                src="https://play-lh.googleusercontent.com/CURWh1u-LhfE2r0o3zgh2ydF7rATdpnoM16Kq-3RaAIoy4WsHfHsrws8LnZa5aXHiW3G"
-                alt="" />
-              <a class="light"
-                href="https://play-lh.googleusercontent.com/CURWh1u-LhfE2r0o3zgh2ydF7rATdpnoM16Kq-3RaAIoy4WsHfHsrws8LnZa5aXHiW3G"><img
-                  src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <h4>Rock Paper Scissor</h4>
-              <p>Android</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 java manipul design">
-          <div class="h_gallery_item">
-            <div class="g_img_item" style="height: 23em">
-              <img class="img-fluid" src="docs/crk.png" alt="" class="h-100" />
-              <a class="light" href="docs/crk.png"><img src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <h4>Cricket Scoring</h4>
-              <p>Java netbeans</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 brand python-ml creative">
-          <div class="h_gallery_item">
-            <div class="g_img_item" style="height: 23em">
-              <img class="img-fluid"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png"
-                alt="" />
-              <a class="light"
-                href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png"><img
-                  src="img/gallery/icon.png" alt="" /></a>
-            </div>
-            <div class="g_item_text">
-              <h4>Twitter Sentiment-analysis</h4>
-              <p>Pyhton-ml</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="more_btn">
-          <a class="main_btn" href="#">Load More Items</a>
-        </div> -->
-    </div>
-  </section>
-  <!--================End Home Gallery Area =================-->
-
-  <!--================Testimonials Area =================-->
-  <section class="testimonials_area p_120" id="ceritificate">
-    <div class="container">
-      <div class="main_title">
-        <h2>Ceritificates</h2>
-        <p>Ceritificates awarded during acdemic period.</p>
-      </div>
-      <div class="testi_inner">
-        <div class="testi_slider owl-carousel">
-          <div class="item text-center">
-
-            <div class="testi_item">
-              <img src="docs/dm.png" alt="" class="w-100 h-100" />
-            </div>
-            <h2>Digital Marketing</h2>
-          </div>
-
-          <div class="item text-center">
-
-            <div class="testi_item">
-              <img src="docs/indus.jpg" alt="" class="w-100 h-100" />
-            </div>
-            <h2>Industrial Training</h2>
-          </div>
-          <div class="item text-center">
-
-            <div class="testi_item">
-              <img src="docs/oops.png" alt="" class="w-100 h-100" />
-            </div>
-            <h2>Python Training</h2>
-          </div>
-          <div class="item text-center">
-
-            <div class="testi_item">
-              <img src="docs/appcer.jpg" alt="" class="w-100 h-100" />
-            </div>
-            <h2>Appreciation</h2>
-          </div>
-          <div class="item text-center">
-
-            <div class="testi_item">
-              <img src="docs/ds.png" alt="" class="w-100 h-100" />
-            </div>
-            <h2>Data Structures</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--================End Testimonials Area =================-->
-
-  <!--================Footer Area =================-->
-  <footer class="footer_area p-5">
-    <button id="back-to-top"><i class="fas fa-angle-up"></i></button>
-    <div class="container text-center">
-      <div class="row footer_inner">
-        <div class="col-lg-5 col-sm-6">
-          <aside class="f_widget ab_widget">
-            <div class="f_title">
-              <h1 class="" style="color: #f5b754">Get in Touch</h1>
-            </div>
-            <p>
-              A passionate Full Stack Software Developer having an experience
-              of building Web and Mobile applications with JavaScript/Reactjs
-              / Nodejs / React Native and some other cool libraries and
-              frameworks.
-            </p>
-          </aside>
-        </div>
-        <!-- <div class="col-lg-5 col-sm-6">
-            <aside class="f_widget news_widget">
-              <div class="f_title">
-                <h3>Newsletter</h3>
-              </div>
-              <p>Stay updated with our latest trends</p>
-              <div id="mc_embed_signup">
-                <form
-                  target="_blank"
-                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                  method="get"
-                  class="subscribe_form relative"
-                >
-                  <div class="input-group d-flex flex-row">
-                    <input
-                      name="EMAIL"
-                      placeholder="Enter email address"
-                      onfocus="this.placeholder = ''"
-                      onblur="this.placeholder = 'Email Address '"
-                      required=""
-                      type="email"
-                    />
-                    <button class="btn sub-btn">
-                      <span class="lnr lnr-arrow-right"></span>
-                    </button>
-                  </div>
-                  <div class="mt-10 info"></div>
-                </form>
-              </div>
-            </aside>
-          </div> -->
-        <div class="col-lg">
-          <aside class="f_widget social_widget">
-            <div class="f_title"></div>
-            <p>Let us be social</p>
-            <ul class="list">
-              <li>
-                <a class="px-2 w-100 border-0 text-body btn" href="cv.pdf" download="surya_dev_resume"
-                  style="text-decoration: none; background: #f5b754">
-                  Resume
-                  <span><i class="mx-1 fa fa-download"></i></span>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:suryadev7056@gmail.com" class="p-2 rounded text-body" style="background: #f5b754"><i
-                    class="fa fa-google-plus"></i></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.linkedin.com/in/surya-dev-44b4ba33a/"
-                  class="p-2 rounded text-body h-100" style="background: #f5b754"><i class="fa fa-linkedin"></i></a>
-              </li>
-
-              <li></li>
-            </ul>
-          </aside>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--================End Footer Area =================-->
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/stellar.js"></script>
-  <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-  <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-  <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-  <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-  <script src="js/jquery.ajaxchimp.min.js"></script>
-  <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-  <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-  <script src="js/mail-script.js"></script>
-  <script src="js/theme.js"></script>
-</body>
-
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
-<style>
-  .dd {
-    height: auto;
-    padding: 5px;
-    font-size: 3em;
-    background-color: #f0f0f0;
-  }
 
-  .sp {
-    font-size: xx-large;
-  }
-
-  .dd:hover i,
-  .dd:hover h2 {
-    /* filter: invert(75%) sepia(27%) saturate(5775%) hue-rotate(189deg) brightness(106%) contrast(98%);
-		color: linear; */
-    /* background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; */
-    color: black;
-  }
-
-  .dd:hover {
-    box-shadow: 5px 3px 4px #888888;
-    background: #f5b754;
-  }
-</style>
+<script src="Data.js"></script>
 <script>
-  var i = 0;
-  var txt = "Hello Everybody, i am";
-  var speed = 50;
+  document.getElementById("userName").innerText = Data.UserName;
+  document.getElementById("mobuserName").innerText = Data.UserName;
+  document.getElementById("userInfo").innerText = Data.UserInfo;
+  document.getElementById("BasicInfo").innerText = Data.BasicInfo;
+  const expertiseList = document.getElementById("expertise-list");
+  for (const category in Data.expertize) {
+    const skills = Data.expertize[category];
 
-  function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("demo").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-    }
+    // Add category name
+    const categoryItem = document.createElement("li");
+    categoryItem.innerHTML = `<span class="txt-gold">${category.toUpperCase()}:</span> ${skills.join(
+      ", "
+    )}`;
+    expertiseList.appendChild(categoryItem);
   }
-</script>
 
-<script>
-  var btn = $('#back-to-top');
+  document.getElementById("userEmail").innerText = Data.UserEmail;
+  document.getElementById("userEmail").href = "mailto:" + Data.UserEmail;
+  document.getElementById("userPhn").innerText = Data.UserPhone;
+  document.getElementById("userPhn").href = "tel:" + Data.UserPhone;
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
+  document.getElementById("sayHlo").innerText = "Say Hello !!!";
+  document.getElementById("sayHlo").href = "mailto:" + Data.UserEmail;
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
+  const expSec = document.getElementById("exp-sec");
 
+  Data.Experience.forEach((element, index) => {
+    // console.log(element[0],index);
 
+    const singleExpSec = document.createElement("div");
+    singleExpSec.classList.add("timeline__block");
+    singleExpSec.innerHTML =
+      `<div class="timeline__bullet"></div> <div class="timeline__header"> <h4 class="timeline__title">` +
+      element[0] +
+      `</h3> <h5 class="timeline__meta clr-gold">` +
+      element[1] +
+      `</h5> 
+            <p class="timeline__timeframe">` +
+      element[3] +
+      `, ` +
+      element[2] +
+      `</p> </div> <div class="timeline__desc"> 
+            </div>`;
+    expSec.appendChild(singleExpSec);
+  });
+
+  const eduSec = document.getElementById("edu-sec");
+  Data.Education.forEach((element) => {
+    // console.log(element);
+    const singleEdu = document.createElement("div");
+    singleEdu.classList.add("timeline__block");
+    singleEdu.innerHTML =
+      `<div class="timeline__bullet"></div> <div class="timeline__header"> 
+            <h4 class="timeline__title">` +
+      element[0] +
+      `</h3> <h5 class="timeline__meta clr-gold">` +
+      element[2] +
+      `</h5> 
+            <p class="timeline__timeframe">` +
+      element[1] +
+      `</p> </div> <div class="timeline__desc"> 
+            </div>`;
+    eduSec.appendChild(singleEdu);
+  });
+
+  document.querySelectorAll(".mail-lnk").forEach((el) => {
+    el.href = `https://mail.google.com/mail/?view=cm&to=` + Data.UserEmail;
+  });
+  document.querySelectorAll(".linkedin-lnk").forEach((el) => {
+    el.href = Data.UserLinkedin;
+  });
+  document.querySelectorAll(".github-lnk").forEach((el) => {
+    el.href = Data.UserGit;
+  });
+
+  const proList = document.getElementById("project-list");
+  Data.ProjectLists.forEach((element) => {
+    const singleProjectList = document.createElement("li");
+    singleProjectList.classList.add("folio-list__item");
+    singleProjectList.classList.add("column");
+
+    singleProjectList.innerHTML =
+      `<a class="folio-list__item-link" href="` +
+      element[3] +
+      `" target="_blank"> <div class="folio-list__item-pic"> 
+            <img src="` +
+      element[0] +
+      `" srcset="` +
+      element[0] +
+      ` 1x, ` +
+      element[0] +
+      ` 2x"  alt=""> 
+            </div> <div class="folio-list__item-text"> <div class="folio-list__item-cat">` +
+      element[2] +
+      `</div> 
+            <div class="folio-list__item-title">` +
+      element[1] +
+      `</div> </div> </a> <a class="folio-list__proj-link" href="#" title="project link"> 
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg> </a>`;
+
+    proList.appendChild(singleProjectList);
+  });
+
+  document.querySelectorAll(".cv-download").forEach((el) => {
+    el.href = Data.CV_File;
+    el.setAttribute("target", "_blank");
+  });
 </script>
