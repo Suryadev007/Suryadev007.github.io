@@ -17,7 +17,7 @@ I enjoy turning ideas into functional and visually appealing digital experiences
     "page builder": ["Elementor", "DIVI"],
   },
   Experience: [
-    ["TagHash Media", "Web Developer", "Feb 2025", "Present"],
+    ["TagHash Media", "Web Developer", "Feb 2025", "Nov-2025"],
     ["SainSoft", "WordPress Developer", "Apr 2024", "Jan 2025"],
     ["STEP-GNDEC", "Full Stack Developer trainee", "Jan 2024", "Jun 2025"],
     
