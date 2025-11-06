@@ -18,8 +18,9 @@ I enjoy turning ideas into functional and visually appealing digital experiences
   },
   Experience: [
     ["TagHash Media", "Web Developer", "Feb,2025", "Present"],
-    ["SainSoft", "Web Developer", "Aug,2024", "Jan,2025"],
-    ["STEP-GNDEC", "Full Stack Developer Internship", "Jan,2024", "Jun,2025"],
+    ["STEP-GNDEC", "Full Stack Developer trainee", "Jan,2024", "Jun,2025"],
+    ["SainSoft", "WordPress Developer", "Apr,2024", "Jan,2025"]
+    
   ],
 
   Education: [
@@ -37,66 +38,82 @@ I enjoy turning ideas into functional and visually appealing digital experiences
 
   ProjectLists: [
     [
-      "images/portfolio/lamp.jpg",
+      "img/gallery/i2.webp",
       "Caddilac Uniform",
       "Wordpress",
       "https://www.cadillacuniform.com/",
+      "#eb691a"
     ],
     [
-      "images/portfolio/lamp.jpg",
+      "img/gallery/i3.webp",
       "RTD Cleaning",
       "Wordpress",
       "https://rtdcommclean.com.au/",
+      "#d3d2d5"
     ],
-    ["images/portfolio/lamp.jpg", "Vgass", "Shopify", "#"],
     [
-      "images/portfolio/lamp.jpg",
+      "img/gallery/i4.webp", 
+      "Vgass", 
+      "Shopify", 
+      "https://vgass.com/",
+      "#252623"
+    ],
+    [
+      "img/gallery/i78.webp",
       "Pax Scrubs",
       "Shopify",
       "https://paxscrubs.com/",
+      "#9e9e9e"
     ],
     [
-      "images/portfolio/lamp.jpg",
+      "img/gallery/i1.webp",
       "Prytec Solutions",
       "Wordpress",
       "https://prytec.com.au/",
+      "#572e6c"
     ],
     [
-      "images/portfolio/lamp.jpg",
+      "img/gallery/i5.webp",
       "HM StripOuts & Defits",
       "Wordpress",
       "https://hmstripouts.com.au/",
+      "#ffffff"
     ],
-    ["images/portfolio/lamp.jpg", "ISTN", "Wordpress", "https://istn.com/"],
+    ["img/gallery/i7.webp", "ISTN", "Wordpress", "https://istn.com/","#ffffff"],
     [
-      "images/portfolio/lamp.jpg",
+      "img/gallery/i8.webp",
       "Circle Of Life Health",
       "Wordpress",
       "https://colhealth.com.au/",
+      "#d3d2d5"
     ],
     [
-      "images/portfolio/lamp.jpg",
+      "img/gallery/i9.webp",
       "Clear Vuem",
       "Wordpress",
       "https://clearvuemn.com/",
+      "#d3d2d5"
     ],
     [
-      "images/portfolio/lamp.jpg",
+      "img/gallery/i10.webp",
       "Aaron’s Custom Plumbing",
       "Wordpress",
       "https://aaronscustomplumbing.com/",
+      "#d3d2d5"
     ],
     [
-      "images/portfolio/lamp.jpg",
+      "img/gallery/i11.webp",
       "Atkins",
       "Wordpress",
       "https://atkinsplumbingandgas.com.au/",
+      "#ffffff"
     ],
     [
-      "images/portfolio/lamp.jpg",
+      "img/gallery/i12.webp",
       "AP Plumbing",
       "Wordpress",
       "https://adrianperezplumbing.com/",
+      "#d3d2d5"
     ],
   ],
 

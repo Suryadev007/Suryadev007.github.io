@@ -716,7 +716,9 @@
     singleProjectList.innerHTML =
       `<a class="folio-list__item-link" href="` +
       element[3] +
-      `" target="_blank"> <div class="folio-list__item-pic"> 
+      `" target="_blank"> <div class="folio-list__item-pic" style="background: ` +
+      element[4] +
+      `"> 
             <img src="` +
       element[0] +
       `" srcset="` +
@@ -740,3 +742,4 @@
     el.setAttribute("target", "_blank");
   });
 </script>
+
