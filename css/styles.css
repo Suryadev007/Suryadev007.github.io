@@ -3596,7 +3596,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 600px) {
   ul#project-list li {
-    padding: 5px;
+    padding: 5px !important;
 }
   .about-info {
     width: 100%;
