@@ -795,7 +795,7 @@ ul.mob-menu-link li a {
         flex-direction: column;
     }
    .banner-section .banner-content{
-    height: 300px;
+    height: 100vh;
    } 
   .banner-section .banner-content h1{
     font-size: 32px;
