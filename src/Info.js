@@ -1,11 +1,11 @@
 const InfoData = {
   expeience: [
     // Latetest on top
-    {
-      time: "NOV-2025 - PRESENT",
-      title: "Web Developer",
-      place: "Freelance",
-    },
+    // {
+    //   time: "NOV-2025 - PRESENT",
+    //   title: "Web Developer",
+    //   place: "Freelance",
+    // },
     {
       time: "FEB-2025 - NOV-2025",
       title: "Jr. Web Developer ",
