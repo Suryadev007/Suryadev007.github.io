@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="/assets/images/logo192.png" />
+    <title>Name</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="row">
+        <div class="logo">
+          <h1 class="my-name">Name</h1>
+        </div>
+
+        <div class="menu">
+          <ul class="menu-link">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#personal-info">About</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#completed-projects">projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cta-mnu">
+          <a class="my-email" href="">
+            <button class="btn-signin">Lets Talk !</button>
+          </a>
+        </div>
+
+        <div class="mob-menu-icon">
+          <i class="fa-solid fa-bars" id="mob-menu-icn"></i>
+          <i class="fa fa-times" aria-hidden="true" id="mob-menu-icn-can"></i>
+
+          <ul class="mob-menu-link" id="mob-menu-link">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#personal-info">About</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#completed-projects">projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="banner-section" id="banner-section">
+        <div class="banner-content">
+          <h1>
+            experinced web
+            <span class="developer-animation" data-text="developer">
+              developer
+            </span>
+          </h1>
+          <div class="banner-cta">
+            <a class="my-email">
+              <button class="btn-primary">Hire Me</button>
+            </a>
+            <a class="my-cv" target="_blank" rel="noreferrer">
+              <button class="btn-secondary">Download CV</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="logos-sec">
+        <div class="row">
+          <div class="logos-row">
+            <!-- {/* <img src="{logo1}" alt="Logo 1" />
+            <img src="{logo2}" alt="Logo 2" />
+            <img src="{logo3}" alt="Logo 3" />
+            <img src="{logo4}" alt="Logo 4" />
+            <img src="{logo5}" alt="Logo 5" />
+            <img src="{logo3}" alt="Logo 3" /> */} -->
+            <!-- <h3>Full Stack Web Developer</h3>
+            <h3>WordPress frontend Developer</h3>
+            <h3>React Developer</h3>
+            <h3>Php Web Developer</h3>
+            <h3>Php WordPress Developer</h3> -->
+          </div>
+
+          <div class="logos-row" aria-hidden="true">
+            <!-- {/* <img src="{logo1}" alt="Logo 1" />
+            <img src="{logo2}" alt="Logo 2" />
+            <img src="{logo3}" alt="Logo 3" />
+            <img src="{logo4}" alt="Logo 4" />
+            <img src="{logo5}" alt="Logo 5" />
+            <img src="{logo3}" alt="Logo 3" /> */} -->
+            <!-- <h3>Full Stack Web Developer</h3>
+            <h3>WordPress frontend Developer</h3>
+            <h3>React Developer</h3>
+            <h3>Php Web Developer</h3>
+            <h3>Php WordPress Developer</h3> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section" id="personal-info">
+        <div class="row about-heading">
+          <!-- <h2>About Me</h2> -->
+        </div>
+
+        <div class="about-content row">
+          <div class="about-image col-l">
+            <img
+              class="about-image-decor"
+              src="./assets/images/abt1.webp"
+              alt="About Me"
+            />
+          </div>
+
+          <div class="about-text col-r">
+            <h2>Personal Info</h2>
+            <!-- <p class="abt-info">
+              Hi, I’m Surya Dev, a passionate Web Developer skilled in building
+              modern, responsive, and user-friendly websites. I specialize in
+              frontend development using technologies like React, HTML, CSS, and
+              JavaScript, and I’m also experienced with CMS platforms such as
+              WordPress and Shopify.
+            </p>
+            <p class="abt-info">
+              I enjoy turning ideas into functional and visually appealing
+              digital experiences that help businesses grow and users engage
+              effortlessly.
+            </p> -->
+            <p class="abt-info about-me-txt"></p>
+
+            <div class="personal-info-row">
+              <a class="icon-box my-email">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <h3>Email</h3>
+                <p class="my-email"></p>
+              </a>
+
+              <a class="icon-box my-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <h3>Phone</h3>
+                <p class="my-phone"></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section" id="button-wrapper">
+        <div class="row txt-cntr">
+          <button id="exp-btn">Experience</button>
+          <button id="edu-btn">education</button>
+        </div>
+      </div>
+
+      <div class="about-section" id="experience">
+        <div class="about-content row">
+          <div class="about-image col-l">
+            <img
+              class="about-image-decor flip-stl"
+              src="./assets/images/about2.webp"
+              alt="About Me"
+            />
+          </div>
+
+          <div class="about-text col-r">
+            <h2>My Experience</h2>
+            <!-- <ul class="exp-lst" id="exp-lst">
+              {exp.map((item, index) => (
+                <li key={index} class="li-abt-info">
+                  <span class="time-line">{item.time}</span>
+                  <span class="compony-name">
+                    {item.title} <br>
+                    {item.place}
+                  </span>
+                </li>
+              ))}
+
+            </ul> -->
+
+            <ul class="exp-lst" id="exp-lst"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section" id="education">
+        <!-- {/* <div class='row about-heading'>
+          <h2>Experience</h2>
+        </div> */} -->
+        <div class="about-content row">
+          <div class="about-image col-l txt-end">
+            <img
+              class="about-image-decor"
+              src="./assets/images/about2.webp"
+              alt="About Me"
+            />
+          </div>
+
+          <div class="about-text col-r">
+            <h2>My Education</h2>
+            <ul class="exp-lst">
+              <li class="li-abt-info">
+                <span class="time-line">AUG-2022 - MAY-2024</span>
+                <span class="compony-name">
+                  Master's In Computer Application<br />GNDEC LDH,PB
+                </span>
+              </li>
+
+              <li class="li-abt-info">
+                <span class="time-line">JUL-2019 - APR-2022</span>
+                <span class="compony-name">
+                  Bachelor of Computer Applications<br />PCTE LDH,PB
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section" id="skills">
+        <div class="about-content row">
+          <div class="about-text col-r full-width">
+            <h2 class="txt-cntr">My Skills</h2>
+
+            <ul class="skills-lst">
+              <li class="skill-list">
+                <div class="cstm-icon" data-progress="100">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                HTML5
+              </li>
+
+              <li class="skill-list">
+                <div class="cstm-icon" data-progress="100">
+                  <i class="fa-brands fa-css3"></i>
+                </div>
+                CSS
+              </li>
+
+              <li class="skill-list">
+                <div class="cstm-icon" data-progress="95">
+                  <i class="fa-brands fa-square-js"></i>
+                </div>
+                JavaScript
+              </li>
+
+              <li class="skill-list">
+                <div class="cstm-icon" data-progress="80">
+                  <i class="fa-brands fa-react"></i>
+                </div>
+                React.js
+              </li>
+
+              <li class="skill-list">
+                <div class="cstm-icon" data-progress="80">
+                  <i class="fa-brands fa-wordpress"></i>
+                </div>
+                WordPress
+              </li>
+
+              <li class="skill-list">
+                <div class="cstm-icon" data-progress="80">
+                  <i class="fa-brands fa-shopify"></i>
+                </div>
+                Shopify
+              </li>
+
+              <li class="skill-list">
+                <div class="cstm-icon" data-progress="90">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                Git & GitHub
+              </li>
+
+              <li class="skill-list">
+                <div class="cstm-icon" data-progress="90">
+                  <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                Responsive Design
+              </li>
+
+              <li class="skill-list">
+                <div class="cstm-icon" data-progress="90">
+                  <i class="fa-brands fa-font-awesome"></i>
+                </div>
+                SEO Basics
+              </li>
+
+              <li class="skill-list">
+                <div class="cstm-icon" data-progress="90">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                Cross-Browser Compatibility
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section" id="completed-projects">
+        <div class="about-content row flex-col">
+          <h2 class="txt-cntr">
+            Completed Projects<br />
+            <p>These are some of my completed projects...</p>
+          </h2>
+
+          <div class="project-list full-width"></div>
+        </div>
+      </div>
+
+      <div class="work-tog .about-content" id="contact">
+        <div class="rows">
+          <div class="col-l">
+            <h2>Let's work together. <br />fixed a meeting</h2>
+            <p>
+              I'm available for freelance projects and full-time opportunities.
+              <br />Let's create something amazing together!
+            </p>
+
+            <div class="personal-info-row">
+              <a class="icon-box my-email">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <h3>Email</h3>
+                <p class="my-email"></p>
+              </a>
+
+              <a class="icon-box my-phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <h3>Phone</h3>
+                <p class="my-phone"></p>
+              </a>
+            </div>
+          </div>
+
+          <div class="about-text col-r txt-cntr">
+            <img
+              class="about-image-decor"
+              src="./assets/images/abt-img1.webp"
+              alt="About Me"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="row">
+        <p class="text-copyright"></p>
+      </div>
+    </footer>
+  </body>
+  <script src="/assets/data.js"></script>
+</html>
