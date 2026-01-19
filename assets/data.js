@@ -49,7 +49,7 @@ const workExperience = [
 const workSample = [
   {
     projectTitle: "RTD Cleaning",
-    projectImg: "./assets/images/prytec.webp",
+    projectImg: "./assets/images/rtd.png",
     projectLink: "https://rtdcommclean.com.au/",
   },
 
