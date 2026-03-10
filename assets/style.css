@@ -26,7 +26,14 @@ body > main {
   opacity: 1;
   transform: translateY(0);
 }
+ul#mob-menu-link {
+    z-index: 999999;
+    text-align: start;
 
+}
+ul#mob-menu-link li{
+  padding-inline: 30px;
+}
 .header-sticky {
   position: fixed;
   top: 0;
@@ -45,6 +52,13 @@ div#button-wrapper {
 div#experience,
 div#education {
   padding-top: 20px;
+}
+.next-svg svg{
+  height: 116px;
+  width: 122px;
+}
+.next-svg{
+  padding: 0 !important;
 }
 
 div#button-wrapper .row {

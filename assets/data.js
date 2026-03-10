@@ -47,11 +47,7 @@ const workExperience = [
 ];
 
 const workSample = [
-  {
-    projectTitle: "RTD Cleaning",
-    projectImg: "./assets/images/rtd.png",
-    projectLink: "https://rtdcommclean.com.au/",
-  },
+ 
 
   {
     projectTitle: "Prytec Solutions",
@@ -88,6 +84,36 @@ const workSample = [
     projectImg: "./assets/images/col.webp",
     projectLink: "https://colhealth.com.au/",
   },
+   {
+    projectTitle: "RTD Cleaning",
+    projectImg: "./assets/images/rtd.png",
+    projectLink: "https://rtdcommclean.com.au/",
+  },
+    {
+    projectTitle: "B2B Seeker",
+    projectImg: "./assets/images/b2bseeker.png",
+    projectLink: "https://b2bseeker.in/",
+  }, {
+    projectTitle: "LawSpeed",
+    projectImg: "./assets/images/lawspeed.png",
+    projectLink: "https://www.lawspeed.com/",
+  }, {
+    projectTitle: "Vaping The Way",
+    projectImg: "./assets/images/vaping.png",
+    projectLink: "https://vapingtheway.ca/",
+  }, {
+    projectTitle: "AP Plumbing",
+    projectImg: "./assets/images/applumbing.png",
+    projectLink: "https://adrianperezplumbing.com/",
+  },
+    
+    {
+    projectTitle: "Smooth Plumbing",
+    projectImg: "./assets/images/smoothplb.png",
+    projectLink: "https://www.smoothplumbing.com/",
+  },
+    
+    
 ];
 
 const copyRight = "© All rights reserved Surya Dev.";
@@ -268,7 +294,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const hdr = document.getElementById("header").offsetHeight;
-  document.getElementById("mob-menu-link").style.top = hdr + "px";
+  // document.getElementById("mob-menu-link").style.top = hdr + "px";
   // document.getElementById('banner-section').style.marginTop = hdr + 'px';
 
   document.querySelectorAll(".mob-menu-link a").forEach((link) => {
@@ -285,12 +311,12 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     let current = window.pageYOffset;
 
-    // 1. Scroll UP → header fixed
+
     if (current > lastScroll) {
       header.classList.add("header-sticky");
     }
 
-    // 3. If scroll = 0 → remove fixed (only at top)
+   
     if (current <= 0) {
       header.classList.remove("header-sticky");
     }
@@ -301,7 +327,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const count = document.querySelectorAll("#experience .li-abt-info").length;
   if (count > 4) {
     document.getElementById("exp-lst").style.overflowY = "scroll";
-    document.getElementById("exp-lst").style.maxHeight = "500px"; // aap height adjust kar sakte ho
+    document.getElementById("exp-lst").style.maxHeight = "500px"; 
   }
 });
 
