@@ -16,7 +16,7 @@ body > main {
   flex: 1;
 }
 
-.about-content {
+/* .about-content {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.8s ease-out;
@@ -25,7 +25,7 @@ body > main {
 .about-content.show {
   opacity: 1;
   transform: translateY(0);
-}
+} */
 ul#mob-menu-link {
     z-index: 999999;
     text-align: start;

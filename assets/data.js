@@ -47,6 +47,8 @@ const workExperience = [
 ];
 
 const workSample = [
+ 
+
   {
     projectTitle: "Prytec Solutions",
     projectImg: "./assets/images/prytec.webp",
@@ -82,37 +84,36 @@ const workSample = [
     projectImg: "./assets/images/col.webp",
     projectLink: "https://colhealth.com.au/",
   },
-  {
+   {
     projectTitle: "RTD Cleaning",
     projectImg: "./assets/images/rtd.png",
     projectLink: "https://rtdcommclean.com.au/",
   },
-  {
+    {
     projectTitle: "B2B Seeker",
     projectImg: "./assets/images/b2bseeker.png",
     projectLink: "https://b2bseeker.in/",
-  },
-  {
+  }, {
     projectTitle: "LawSpeed",
     projectImg: "./assets/images/lawspeed.png",
     projectLink: "https://www.lawspeed.com/",
-  },
-  {
+  }, {
     projectTitle: "Vaping The Way",
     projectImg: "./assets/images/vaping.png",
     projectLink: "https://vapingtheway.ca/",
-  },
-  {
+  }, {
     projectTitle: "AP Plumbing",
     projectImg: "./assets/images/applumbing.png",
     projectLink: "https://adrianperezplumbing.com/",
   },
-
-  {
+    
+    {
     projectTitle: "Smooth Plumbing",
     projectImg: "./assets/images/smoothplb.png",
     projectLink: "https://www.smoothplumbing.com/",
   },
+    
+    
 ];
 
 const copyRight = "© All rights reserved Surya Dev.";
@@ -207,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   const workSampleUL = document.querySelector(
-    "#completed-projects .project-list",
+    "#completed-projects .project-list"
   );
   if (workSampleUL) {
     workSample.forEach((work, index) => {
@@ -239,10 +240,10 @@ document.addEventListener("DOMContentLoaded", () => {
         entry.target.classList.toggle("show", entry.isIntersecting);
       });
     },
-    { threshold: 0.1 },
+    { threshold: 0.2 }
   );
 
-  document.querySelectorAll(".about-section").forEach((el) => {
+  document.querySelectorAll(".about-content").forEach((el) => {
     observer.observe(el);
   });
 
@@ -310,10 +311,12 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     let current = window.pageYOffset;
 
+
     if (current > lastScroll) {
       header.classList.add("header-sticky");
     }
 
+   
     if (current <= 0) {
       header.classList.remove("header-sticky");
     }
@@ -324,7 +327,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const count = document.querySelectorAll("#experience .li-abt-info").length;
   if (count > 4) {
     document.getElementById("exp-lst").style.overflowY = "scroll";
-    document.getElementById("exp-lst").style.maxHeight = "500px";
+    document.getElementById("exp-lst").style.maxHeight = "500px"; 
   }
 });
 
