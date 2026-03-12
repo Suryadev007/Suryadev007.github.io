@@ -41,6 +41,7 @@ ul#mob-menu-link li{
   z-index: 1000;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   background-color: #000;
+
 }
 
 div#button-wrapper {
@@ -809,7 +810,7 @@ ul.mob-menu-link li a {
 @media screen and (max-width: 600px) {
   .header .row {
     justify-content: space-between;
-    padding-inline: 20px;
+    /* padding-inline: 20px; */
   }
   .mob-menu-icon {
     display: block;
