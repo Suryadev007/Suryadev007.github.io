@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.1 },
   );
 
-  document.querySelectorAll(".about-content").forEach((el) => {
+  document.querySelectorAll(".about-section").forEach((el) => {
     observer.observe(el);
   });
 
