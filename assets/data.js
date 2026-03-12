@@ -234,18 +234,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle("show", entry.isIntersecting);
-      });
-    },
-    { threshold: 0.2 }
-  );
+  // const observer = new IntersectionObserver(
+  //   (entries) => {
+  //     entries.forEach((entry) => {
+  //       entry.target.classList.toggle("show", entry.isIntersecting);
+  //     });
+  //   },
+  //   { threshold: 0.2 }
+  // );
 
-  document.querySelectorAll(".about-content").forEach((el) => {
-    observer.observe(el);
-  });
+  // document.querySelectorAll(".about-content").forEach((el) => {
+  //   observer.observe(el);
+  // });
 
   let expBtn = document.getElementById("exp-btn");
   let eduBtn = document.getElementById("edu-btn");
